@@ -1,0 +1,97 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60vh;
+
+  width: 70vw;
+  display: flex;
+  gap: 20px;
+}
+
+.user {
+  background-color: hsl(226, 43%, 10%);
+  border-radius: 8px;
+}
+
+.Jeremy {
+  background-color: hsl(246, 80%, 60%);
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.Jeremy img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  list-style: none;
+  color: grey;
+  height: 100vh;
+  padding: 40px 5px 10px 20px;
+}
+
+.footer-li3 {
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  row-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.bg {
+  border-radius: 8px;
+}
+
+.work-icon {
+  float: right;
+  height: 40px;
+  width: 40px;
+}
+
+.work {
+  display: flex;
+  padding: 10px;
+  margin-top: 30px;
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+  height: 80%;
+  background-color: hsl(226, 43%, 10%);
+}
+
+@media screen and (max-width: 375px) {
+  .main {
+    display: grid;
+  }
+
+  .footer {
+    height: 40%;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 10px;
+  }
+}
